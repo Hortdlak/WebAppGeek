@@ -39,7 +39,6 @@ namespace WebAppGeek.Controllers
             /*
             using (ProductContext storage = new())
             {
-                var list = storage.ProductGroups
                     .Select(pg => new ProductGroup
                     {Id = pg.Id,Name = pg.Name,Description = pg.Description,Products = pg.Products})
                     .ToList();
@@ -92,7 +91,7 @@ namespace WebAppGeek.Controllers
                 return Ok();
             }
             catch (Exception)
-            {
+        {
 
                 return StatusCode(404);
             }
